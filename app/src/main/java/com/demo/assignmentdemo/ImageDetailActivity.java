@@ -40,10 +40,10 @@ public class ImageDetailActivity extends AppCompatActivity {
 
         Glide.with(ImageDetailActivity.this).load(hitArrayList.get(position).getPreviewURL()).into(iv_preview);
         tvName.setText(hitArrayList.get(position).getUser());
-        tvLike.setText(hitArrayList.get(position).getLikes().toString());
-        tvComment.setText(hitArrayList.get(position).getComments().toString());
-        tvView.setText(hitArrayList.get(position).getViews().toString());
-        tvDownload.setText(hitArrayList.get(position).getDownloads().toString());
+        tvLike.setText("Likes: \n"+hitArrayList.get(position).getLikes().toString());
+        tvComment.setText("Comments: \n"+hitArrayList.get(position).getComments().toString());
+        tvView.setText("Views: \n"+hitArrayList.get(position).getViews().toString());
+        tvDownload.setText("Download: "+hitArrayList.get(position).getDownloads().toString());
 
     }
 }

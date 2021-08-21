@@ -48,16 +48,16 @@ public class ImagesAdapter extends RecyclerView.Adapter<ImagesAdapter.ViewHolder
             holder.tvName.setText(hit.getUser());
         }
         if(hit.getLikes()!=null && !hit.getLikes().equals("")){
-            holder.tvLike.setText(hit.getLikes().toString());
+            holder.tvLike.setText("Likes: \n"+hit.getLikes().toString());
         }
         if(hit.getDownloads()!=null && !hit.getDownloads().equals("")){
-            holder.tvDownload.setText(hit.getDownloads().toString());
+            holder.tvDownload.setText("DownLoads: \n"+hit.getDownloads().toString());
         }
         if(hit.getViews()!=null && !hit.getViews().equals("")){
-            holder.tvView.setText(hit.getViews().toString());
+            holder.tvView.setText("Views: \n"+hit.getViews().toString());
         }
         if(hit.getComments()!=null && !hit.getComments().equals("")){
-            holder.tvComment.setText(hit.getComments().toString());
+            holder.tvComment.setText("Comments: \n"+hit.getComments().toString());
         }
 
         holder.rlContainer.setOnClickListener(new View.OnClickListener() {
